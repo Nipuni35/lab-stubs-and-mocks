@@ -47,4 +47,8 @@ public class Employee {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    public String getCapitalizedName() {
+        return name.substring(0,1).toUpperCase() + name.substring(1,6).toLowerCase();
+    }
 }
